@@ -8,11 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Palette.tsx" />
+    <None Remove="ClientApp\components\Raw.tsx" />
+    <None Remove="ClientApp\components\RawPicker.tsx" />
+    <None Remove="ClientApp\store.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\Palette.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\TwoDimensionalPicker.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\ColorBox.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Raw.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\RawPicker.tsx" />
+    <TypeScriptCompile Include="ClientApp\store.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

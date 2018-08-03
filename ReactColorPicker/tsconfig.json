@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "experimentalDecorators": true,
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
     "jsx": "react",
     "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "strict": true,
-    "types": ["webpack-env"]
+    "skipLibCheck": true,
+    "strict": false,
+    "types": [ "webpack-env" ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
   },
   "exclude": [
       "bin",
