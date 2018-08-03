@@ -1,6 +1,6 @@
 ﻿import * as React from 'React';
 import { observer } from 'mobx-react';
-import _ from 'lodash';
+import * as _ from 'lodash';
 import { Color, toCss } from './../store';
 
 @observer

@@ -8,9 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\ColorDetail.tsx" />
     <None Remove="ClientApp\components\Palette.tsx" />
     <None Remove="ClientApp\components\Raw.tsx" />
     <None Remove="ClientApp\components\RawPicker.tsx" />
+    <None Remove="ClientApp\components\SliderPicker.tsx" />
     <None Remove="ClientApp\store.tsx" />
   </ItemGroup>
 
@@ -23,7 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\ColorDetail.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Palette.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\SliderPicker.tsx" />
     <TypeScriptCompile Include="ClientApp\components\TwoDimensionalPicker.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ColorBox.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Raw.tsx" />
